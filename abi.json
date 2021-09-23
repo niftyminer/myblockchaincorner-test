@@ -1,0 +1,243 @@
+[
+  {
+      "constant": true,
+      "inputs": [],
+      "name": "cost",
+      "outputs": [
+          {
+              "name": "",
+              "type": "uint256"
+          }
+      ],
+      "payable": false,
+      "type": "function"
+  },
+  {
+      "constant": false,
+      "inputs": [
+          {
+              "name": "_cost",
+              "type": "uint256"
+          }
+      ],
+      "name": "updateCost",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+  },
+  {
+      "constant": false,
+      "inputs": [
+          {
+              "name": "_percent",
+              "type": "uint256"
+          }
+      ],
+      "name": "updatePercent",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+  },
+  {
+      "constant": false,
+      "inputs": [],
+      "name": "withdraw",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+  },
+  {
+      "constant": true,
+      "inputs": [],
+      "name": "percent",
+      "outputs": [
+          {
+              "name": "",
+              "type": "uint256"
+          }
+      ],
+      "payable": false,
+      "type": "function"
+  },
+  {
+      "constant": false,
+      "inputs": [
+          {
+              "name": "page",
+              "type": "uint256"
+          },
+          {
+              "name": "x",
+              "type": "uint32"
+          },
+          {
+              "name": "y",
+              "type": "uint32"
+          },
+          {
+              "name": "price",
+              "type": "uint256"
+          }
+      ],
+      "name": "setPrice",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+  },
+  {
+      "constant": false,
+      "inputs": [
+          {
+              "name": "_owner",
+              "type": "address"
+          }
+      ],
+      "name": "updateOwner",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+  },
+  {
+      "constant": false,
+      "inputs": [],
+      "name": "contractBalance",
+      "outputs": [
+          {
+              "name": "",
+              "type": "uint256"
+          }
+      ],
+      "payable": false,
+      "type": "function"
+  },
+  {
+      "constant": false,
+      "inputs": [
+          {
+              "name": "page",
+              "type": "uint256"
+          },
+          {
+              "name": "x",
+              "type": "uint32"
+          },
+          {
+              "name": "y",
+              "type": "uint32"
+          },
+          {
+              "name": "html",
+              "type": "string"
+          }
+      ],
+      "name": "buyTile",
+      "outputs": [],
+      "payable": true,
+      "type": "function"
+  },
+  {
+      "constant": true,
+      "inputs": [
+          {
+              "name": "",
+              "type": "uint256"
+          },
+          {
+              "name": "",
+              "type": "uint256"
+          },
+          {
+              "name": "",
+              "type": "uint256"
+          }
+      ],
+      "name": "pages",
+      "outputs": [
+          {
+              "name": "owner",
+              "type": "address"
+          },
+          {
+              "name": "html",
+              "type": "string"
+          },
+          {
+              "name": "price",
+              "type": "uint256"
+          }
+      ],
+      "payable": false,
+      "type": "function"
+  },
+  {
+      "constant": false,
+      "inputs": [
+          {
+              "name": "page",
+              "type": "uint256"
+          },
+          {
+              "name": "x",
+              "type": "uint32"
+          },
+          {
+              "name": "y",
+              "type": "uint32"
+          },
+          {
+              "name": "html",
+              "type": "string"
+          }
+      ],
+      "name": "setHtml",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+  },
+  {
+      "inputs": [],
+      "payable": false,
+      "type": "constructor"
+  },
+  {
+      "payable": true,
+      "type": "fallback"
+  },
+  {
+      "anonymous": false,
+      "inputs": [
+          {
+              "indexed": false,
+              "name": "page",
+              "type": "uint256"
+          },
+          {
+              "indexed": false,
+              "name": "x",
+              "type": "uint256"
+          },
+          {
+              "indexed": false,
+              "name": "y",
+              "type": "uint256"
+          },
+          {
+              "indexed": false,
+              "name": "from",
+              "type": "address"
+          },
+          {
+              "indexed": false,
+              "name": "to",
+              "type": "address"
+          },
+          {
+              "indexed": false,
+              "name": "price",
+              "type": "uint256"
+          }
+      ],
+      "name": "SoldTile",
+      "type": "event"
+  }
+]
